@@ -1,0 +1,23 @@
+.main-header {
+  /* view-transition-name: main-header; */
+  contain: layout;
+}
+
+.main-header-text {
+  view-transition-name: main-header-text;
+  contain: layout;
+  width: fit-content;
+}
+
+.banner-img {
+  view-transition-name: banner-img;
+  contain: layout;
+}
+::view-transition-group(banner-img) {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
